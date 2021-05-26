@@ -6,28 +6,29 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public List<QnA> QnA;
-    //Мы проебразуем созданный вручную класс QnA в список объектов
+
+    List<string> rightAnswers = new List<string>();
+    List<string> rQuestions = new List<string>();
 
     public GameObject[] options;
     public GameObject MainGame;
     public GameObject ResultScreen;
-    //Объявляем нужные нам GameObject, что бы с ними можно было работать далее. Назначение некоторых объектов происходит в инспекторе Unity.
 
     public TMP_Text qText;
     public TMP_Text rText;
-    //Объявляем два поля для ввода техта qText - поле для текста вопроса, а rText поле для результатов в конце игры
+    public TMP_Text ansText;
 
     public Image img;
-    //Объявляем переменную типа Image для работы со спрайтами
 
     public AnswerSystem answerSystem;
-    //Объявляем переменную, которая будет представлять собой скрипт AnswerSystem
 
     public int currentQuestion;
     public int score = 0;
     private int roundCounter = 1;
     public int roundAmount = 5;
-    //Объявляем все необходимые числовые переменные
+
+    private string rightAns;
+
 
     private void Start()
     {
@@ -39,8 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void GameCycle()
     {
-        Debug.Log(roundCounter + " " + roundAmount + " " + score);
-        //Строчка, нужная для отладки в юнити
+        //Debug.Log(roundCounter + " " + roundAmount + " " + score);
 
         if (roundCounter == roundAmount)
         {
@@ -48,8 +48,16 @@ public class GameManager : MonoBehaviour
             ResultScreen.SetActive(true);
             //Проверяем, если счетчик раундов равен числу раундов в игре, то мы выключаем MainGame и включаем ResultScreen, где мы будем выводить результаты
 
-            rText.text = "Вы ответили на " + score + " из " + roundAmount + " вопросов";
-            //Код, формирующий результат игрока
+            rText.text = "Вы ответили правильно на " + score + " из " + roundAmount + " вопросов";
+
+            rightAns += "Список правильных ответов:\n";
+
+            for(int i = 0; i < rightAnswers.Count; i++)
+            {
+                rightAns += (i + 1) + "Вопрос" + " - " + rightAnswers[i] + "\n"; //Формируем строку, в которой записаны: номер вопроса и правильный ответ
+            }
+
+            ansText.text = rightAns; //Выводим список правильных ответов пользователю
         }
         else
         {
@@ -73,6 +81,7 @@ public class GameManager : MonoBehaviour
             if (QnA[currentQuestion].CorrectAnswer == i + 1)
             {
                 options[i].GetComponent<AnswerSystem>().isCorrect = true;
+                rightAnswers.Add(QnA[currentQuestion].Answers[i].ToString()); //Добавляем правильный ответ в список 
 
                 //Проводится проверка: Если номер выбранного программой ответа совпадает с номером правльного, то этот ответ помечается как правильный
             }
@@ -83,6 +92,7 @@ public class GameManager : MonoBehaviour
     {
         currentQuestion = Random.Range(0, QnA.Count);//Генерируем число от 0 до числа вопросов
         qText.text = QnA[currentQuestion].Question;//В поле вопроса вставляем текст нашего вопроса.
+        rQuestions.Add(QnA[currentQuestion].Question.ToString()); //Добавляем вопрос в список
         img.sprite = QnA[currentQuestion].img;//В поле со спрайтом вставляем спрайт нашего вопроса
         SetAnswer();
     }

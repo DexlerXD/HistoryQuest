@@ -14,7 +14,6 @@ public class AnswerSystem : MonoBehaviour
             GameManager.score++;
             GameManager.GameCycle();
             //Если выбран правильный ответ, то мы добавляем к счетчику очков 1 и вызываем функцию GameCycle в GameManager
-
         }
         else if (isCorrect == false)
         {

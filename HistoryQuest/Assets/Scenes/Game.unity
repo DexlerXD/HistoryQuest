@@ -378,8 +378,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041C\u0435\u0441\u0442\u043E \u0434\u043B\u044F \u043E\u0442\u0432\u0435\u0442\u0430"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 074d5568bbeb1c8439d7b2d17c43c210, type: 2}
+  m_sharedMaterial: {fileID: -6253689739207257060, guid: 074d5568bbeb1c8439d7b2d17c43c210,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -403,10 +404,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 43.45
   m_fontSizeBase: 30
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -490,7 +491,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -251, y: -24}
+  m_AnchoredPosition: {x: -212, y: -24}
   m_SizeDelta: {x: 325.41724, y: 95.708755}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &188477704
@@ -718,7 +719,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -251, y: 101}
+  m_AnchoredPosition: {x: -212, y: 101}
   m_SizeDelta: {x: 325.3958, y: 96.66412}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &328917715
@@ -859,6 +860,7 @@ RectTransform:
   - {fileID: 2081992541}
   - {fileID: 1410570712}
   - {fileID: 770587050}
+  - {fileID: 896302121}
   m_Father: {fileID: 1569874017}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -941,7 +943,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 592, y: 100.98001}
+  m_AnchoredPosition: {x: 631, y: 100.98001}
   m_SizeDelta: {x: 319.5205, y: 96.628296}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &537525450
@@ -1179,6 +1181,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770587049}
   m_CullTransparentMesh: 0
+--- !u!1 &896302120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 896302121}
+  - component: {fileID: 896302123}
+  - component: {fileID: 896302122}
+  m_Layer: 5
+  m_Name: RightAnsers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &896302121
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896302120}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1844174776}
+  m_Father: {fileID: 439818255}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 10, y: -105}
+  m_SizeDelta: {x: 1015.0771, y: 401.98523}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &896302122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896302120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &896302123
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896302120}
+  m_CullTransparentMesh: 0
 --- !u!1 &910121757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,8 +1314,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0412\u043E\u043F\u0440\u043E\u0441"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 074d5568bbeb1c8439d7b2d17c43c210, type: 2}
+  m_sharedMaterial: {fileID: -6253689739207257060, guid: 074d5568bbeb1c8439d7b2d17c43c210,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1262,10 +1340,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -1644,7 +1722,7 @@ MonoBehaviour:
     - "\u0410\u043D\u0430\u0441\u0442\u0430\u0441\u0438\u044F"
     - "\u0421\u0432\u0435\u0442\u043B\u0430\u043D\u0430"
     CorrectAnswer: 1
-    img: {fileID: 0}
+    img: {fileID: 21300000, guid: c2d1798f138beb7499d69b0eb95a7807, type: 3}
   - Question: "\u041A\u0430\u043A\u043E\u0435 \u0434\u0435\u0440\u0435\u0432\u043E
       \u0441\u0447\u0438\u0442\u0430\u0435\u0442\u0441\u044F \u0441\u0438\u043C\u0432\u043E\u043B\u043E\u043C
       \u0420\u043E\u0441\u0441\u0438\u0438?"
@@ -1654,7 +1732,7 @@ MonoBehaviour:
     - "\u041E\u0441\u0438\u043D\u0430"
     - "\u0415\u043B\u044C"
     CorrectAnswer: 2
-    img: {fileID: 0}
+    img: {fileID: 21300000, guid: b09225d9612738a4f860ba81b6b32018, type: 3}
   - Question: "\u0421\u043A\u043E\u043B\u044C\u043A\u043E \u0434\u043B\u0438\u043B\u0430\u0441\u044C
       \u0441\u0442\u043E\u043B\u0435\u0442\u043D\u044F\u044F \u0432\u043E\u0439\u043D\u0430?"
     Answers:
@@ -1663,17 +1741,17 @@ MonoBehaviour:
     - "98 \u043B\u0435\u0442"
     - "116 \u043B\u0435\u0442"
     CorrectAnswer: 4
-    img: {fileID: 0}
+    img: {fileID: 21300000, guid: 8d446e9273b4e9845a5447d26e73f05c, type: 3}
   - Question: "\u0412 \u0415\u0433\u0438\u043F\u0442\u0435 \u043F\u0438\u0441\u0430\u043B\u0438
       \u043D\u0430 \u043F\u0430\u043F\u0438\u0440\u0443\u0441\u0435, \u043D\u0430
       \u0447\u0435\u043C \u043F\u0438\u0441\u0430\u043B\u0438 \u0432 \u041D\u043E\u0432\u0433\u043E\u0440\u043E\u0434\u0435?"
     Answers:
-    - "\u043D\u0430 \u043B\u0438\u0441\u0442\u044C\u044F\u0445"
-    - "\u043D\u0430 \u0431\u0443\u043C\u0430\u0433\u0435"
-    - "\u043D\u0430 \u0431\u0435\u0440\u0435\u0441\u0442\u0435"
-    - "\u043D\u0430 \u043A\u0430\u043C\u043D\u044F\u0445"
+    - "\u041D\u0430 \u043B\u0438\u0441\u0442\u044C\u044F\u0445"
+    - "\u041D\u0430 \u0431\u0443\u043C\u0430\u0433\u0435"
+    - "\u041D\u0430 \u0431\u0435\u0440\u0435\u0441\u0442\u0435"
+    - "\u041D\u0430 \u043A\u0430\u043C\u043D\u044F\u0445"
     CorrectAnswer: 3
-    img: {fileID: 0}
+    img: {fileID: 21300000, guid: f989f2a3d0ca26c4da8b3c842805e92c, type: 3}
   - Question: "\u041A\u0442\u043E \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F
       \u043E\u0441\u043D\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u043C \u041C\u043E\u0441\u043A\u0432\u044B?"
     Answers:
@@ -1682,19 +1760,19 @@ MonoBehaviour:
     - "\u042E\u0440\u0438\u0439 \u0414\u043E\u043B\u0433\u043E\u0440\u0443\u043A\u0438\u0439"
     - "\u0418\u0432\u0430\u043D \u0413\u0440\u043E\u0437\u043D\u044B\u0439"
     CorrectAnswer: 3
-    img: {fileID: 0}
+    img: {fileID: 21300000, guid: e5cc8a814072dca4f8e78b07351d8c7b, type: 3}
   - Question: "\u0412\u0441\u0435\u043C \u0438\u0437\u0432\u0435\u0441\u0442\u043D\u043E
       \u0432\u044B\u0440\u0430\u0436\u0435\u043D\u0438\u0435 \"\u0442\u044E\u0442\u0435\u043B\u044C\u043A\u0430
       \u0432 \u0442\u044E\u0442\u0435\u043B\u044C\u043A\u0443\", \u0442\u043E \u0435\u0441\u0442\u044C
       \u043E\u0447\u0435\u043D\u044C \u0438 \u043E\u0447\u0435\u043D\u044C \u0442\u043E\u0447\u043D\u043E.
       \u0410 \u0447\u0442\u043E \u0436\u0435 \u0442\u0430\u043A\u043E\u0435 \"\u0442\u044E\u0442\u0435\u043B\u044C\u043A\u0430\"?"
     Answers:
-    - "\u041C\u0435\u0440\u0430 \u0432\u0435\u0441\u0430"
+    - "\u041C\u0435\u0440\u0430 \u0442\u043E\u0447\u043D\u043E\u0441\u0442\u0438"
     - "\u041C\u0435\u0440\u0430 \u0434\u043B\u0438\u043D\u044B"
     - "\u041C\u0435\u0440\u0430 \u0441\u043A\u043E\u0440\u043E\u0441\u0442\u0438"
     - "\u041C\u0435\u0440\u0430 \u0432\u0440\u0435\u043C\u0435\u043D\u0438"
     CorrectAnswer: 1
-    img: {fileID: 0}
+    img: {fileID: 21300000, guid: 5d5d0beba33e5a14bb8866fe028648a7, type: 3}
   - Question: "\u041A\u0430\u043A \u043D\u0430\u0437\u044B\u0432\u0430\u043B\u0441\u044F
       \u043F\u0440\u0430\u0432\u0438\u0442\u0435\u043B\u044C \u0432 \u0414\u0440\u0435\u0432\u043D\u0435\u043C
       \u0415\u0433\u0438\u043F\u0442\u0435? "
@@ -1704,7 +1782,172 @@ MonoBehaviour:
     - "\u0418\u043C\u043F\u0435\u0440\u0430\u0442\u043E\u0440"
     - "\u041A\u043E\u0440\u043E\u043B\u044C"
     CorrectAnswer: 1
-    img: {fileID: 0}
+    img: {fileID: 21300000, guid: e109d9dd6c4f8904bb998d1b48113d4f, type: 3}
+  - Question: "\u041A\u0435\u043C \u0441\u043E\u0437\u0434\u0430\u043D \u0444\u043B\u0430\u0433
+      \u0434\u043B\u044F \u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u0433\u043E
+      \u0444\u043B\u043E\u0442\u0430? \u041A\u0430\u043A \u043E\u043D \u043D\u0430\u0437\u044B\u0432\u0430\u0435\u0442\u0441\u044F?"
+    Answers:
+    - "\u041F\u0435\u0442\u0440\u043E\u043C I. \u0410\u043D\u0434\u0440\u0435\u0435\u0432\u0441\u043A\u0438\u0439
+      \u0444\u043B\u0430\u0433."
+    - "\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u043E\u043C \u041D\u0435\u0432\u0441\u043A\u0438\u043C.
+      \u0410\u043B\u0435\u043A\u0441\u0435\u0435\u0432\u0441\u043A\u0438\u0439 \u0444\u043B\u0430\u0433."
+    - "\u0418\u0432\u0430\u043D\u043E\u043C \u0413\u0440\u043E\u0437\u043D\u044B\u043C.
+      \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440\u043E\u0432\u0441\u043A\u0438\u0439
+      \u0444\u043B\u0430\u0433."
+    - "\u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u043E\u0439 II.  \u0415\u043A\u0430\u0442\u0435\u0440\u0438\u043D\u0441\u043A\u0438\u0439
+      \u0444\u043B\u0430\u0433."
+    CorrectAnswer: 1
+    img: {fileID: 21300000, guid: 22c89052761c9d142b300c848894dd5f, type: 3}
+  - Question: "\u041A\u0430\u043A \u043D\u0430\u0437\u044B\u0432\u0430\u0435\u0442\u0441\u044F
+      \u0443\u0447\u0430\u0441\u0442\u043E\u043A \u0437\u0435\u043C\u043B\u0438,
+      \u0432\u044B\u0434\u0435\u043B\u0435\u043D\u043D\u044B\u0439 \u043A\u0440\u0435\u0441\u0442\u044C\u044F\u043D\u0438\u043D\u0443
+      \u043F\u0440\u0438 \u0432\u044B\u0445\u043E\u0434\u0435 \u0435\u0433\u043E
+      \u0438\u0437 \u043E\u0431\u0449\u0438\u043D\u044B, \u043A\u0443\u0434\u0430
+      \u043E\u043D \u043F\u0435\u0440\u0435\u0441\u0435\u043B\u0438\u043B\u0441\u044F
+      \u0438\u0437 \u0434\u0435\u0440\u0435\u0432\u043D\u0438?"
+    Answers:
+    - "\u0412\u043B\u0430\u0434\u0435\u043D\u0438\u0435"
+    - "\u0423\u0441\u043E\u0431\u0438\u0446\u0430"
+    - "\u0425\u0443\u0442\u043E\u0440"
+    - "\u0414\u043E\u043C"
+    CorrectAnswer: 3
+    img: {fileID: 21300000, guid: eaa0feee287ad164ba790f859d76e64f, type: 3}
+  - Question: "\u041F\u043E\u0434 \u0447\u044C\u0438\u043C \u043A\u043E\u043C\u0430\u043D\u0434\u043E\u0432\u0430\u043D\u0438\u0435\u043C
+      \u0440\u0443\u0441\u0441\u043A\u0438\u0435 \u0432\u043E\u0439\u0441\u043A\u0430
+      \u043F\u0435\u0440\u0435\u0448\u043B\u0438 \u0447\u0435\u0440\u0435\u0437 \u0410\u043B\u044C\u043F\u044B?"
+    Answers:
+    - "\u041F. \u0421. \u041D\u0430\u0445\u0438\u043C\u043E\u0432\u044B\u043C"
+    - "\u0410.\u0412.\u0421\u0443\u0432\u043E\u0440\u043E\u0432\u044B\u043C"
+    - "\u041C. \u0418. \u041A\u0443\u0442\u0443\u0437\u043E\u0432\u044B\u043C"
+    - "\u0414. \u0420. \u0413\u0430\u043B\u0438\u0446\u043A\u0438\u043C"
+    CorrectAnswer: 2
+    img: {fileID: 21300000, guid: ac80af5ae3d5f044cace5d5e093a1969, type: 3}
+  - Question: "\u0412 \u0447\u0435\u0441\u0442\u044C \u043A\u043E\u0433\u043E \u0434\u0430\u043D\u043E
+      \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 \u0433\u043E\u0440\u043E\u0434\u0443
+      \u041A\u0438\u0435\u0432?"
+    Answers:
+    - "\u0412 \u0447\u0435\u0441\u0442\u044C \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u044F
+      \u0434\u0440\u0435\u0432\u043D\u0438\u0445 \u043D\u0430\u0440\u043E\u0434\u043E\u0432"
+    - "\u0412 \u0447\u0435\u0441\u0442\u044C \u0434\u0440\u0435\u0432\u043D\u0435\u0433\u043E
+      \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u044F \u0433\u043E\u0440\u043E\u0434\u0430"
+    - "\u0412 \u0447\u0435\u0441\u0442\u044C \u0440\u0435\u043A\u0438 \u0414\u043D\u0435\u043F\u0440"
+    - "\u0412 \u0447\u0435\u0441\u0442\u044C \u043A\u043D\u044F\u0437\u044F \u041A\u0438\u044F"
+    CorrectAnswer: 4
+    img: {fileID: 21300000, guid: 93f645a8dea95c1419660dbda8bfaa16, type: 3}
+  - Question: "\u041A\u0430\u043A \u0437\u0432\u0430\u043B\u0438 \u043F\u0435\u0440\u0432\u043E\u0433\u043E
+      \u0432\u043B\u0430\u0434\u0435\u043B\u044C\u0446\u0430 \u0437\u0435\u043C\u043B\u0438,
+      \u043D\u0430 \u043A\u043E\u0442\u043E\u0440\u043E\u0439 \u0441\u0442\u043E\u0438\u0442
+      \u041C\u043E\u0441\u043A\u0432\u0430?"
+    Answers:
+    - "\u0411\u043E\u044F\u0440\u0438\u043D \u041A\u0443\u0447\u043A\u0430"
+    - "\u0411\u043E\u044F\u0440\u0438\u043D \u0418\u0432\u0430\u043D"
+    - "\u042E\u0440\u0438\u0439 \u0414\u043E\u043B\u0433\u043E\u0440\u0443\u043A\u0438\u0439"
+    - "\u0418\u0432\u0430\u043D \u0413\u0440\u043E\u0437\u043D\u044B\u0439"
+    CorrectAnswer: 1
+    img: {fileID: 21300000, guid: 14e470cfb7801a24d928e1080027fa6c, type: 3}
+  - Question: "\u041A\u0430\u043A\u043E\u0439 \u0446\u0430\u0440\u044C \u0432\u0435\u043B\u0435\u043B
+      \u043A\u0430\u0437\u043D\u0438\u0442\u044C \u0441\u043B\u043E\u043D\u0430 \u0438
+      \u0437\u0430 \u0447\u0442\u043E?"
+    Answers:
+    - "\u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440 \u041C\u0430\u043A\u0435\u0434\u043E\u043D\u0441\u043A\u0438\u0439
+      \u0437\u0430 \u0442\u043E, \u0447\u0442\u043E \u043E\u043D \u043C\u0435\u0448\u0430\u043B
+      \u043F\u0440\u043E\u0445\u043E\u0434\u0443 \u0432\u043E\u0439\u0441\u043A."
+    - "\u0414\u043C\u0438\u0442\u0440\u0438\u0439 \u0414\u043E\u043D\u0441\u043A\u043E\u0439,
+      \u0437\u0430 \u043D\u0430\u0434\u043E\u0431\u043D\u043E\u0441\u0442\u044C\u044E
+      \u0432 \u0441\u043B\u043E\u043D\u043E\u0432\u043E\u0439 \u043A\u043E\u0441\u0442\u0438"
+    - "\u0418\u0432\u0430\u043D IV \u0413\u0440\u043E\u0437\u043D\u044B\u0439 \u0437\u0430
+      \u0442\u043E, \u0447\u0442\u043E \u0441\u043B\u043E\u043D \u043D\u0435 \u0445\u043E\u0442\u0435\u043B
+      \u0432\u0441\u0442\u0430\u0442\u044C \u043F\u0435\u0440\u0435\u0434 \u043D\u0438\u043C
+      \u043D\u0430 \u043A\u043E\u043B\u0435\u043D\u0438."
+    - "\u0424\u0451\u0434\u043E\u0440 I \u0418\u0432\u0430\u043D\u043E\u0432\u0438\u0447
+      \u0437\u0430 \u0442\u043E, \u0447\u0442\u043E \u0441\u043B\u043E\u043D \u0441\u043B\u043E\u043C\u0430\u043B
+      \u0433\u043E\u0440\u043E\u0434\u0441\u043A\u0438\u0435 \u0432\u043E\u0440\u043E\u0442\u0430."
+    CorrectAnswer: 3
+    img: {fileID: 21300000, guid: 912a353fbd4f9be4faf0e626056668cb, type: 3}
+  - Question: "\u0412 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u0438
+      \u0441\u043E \u0441\u0442\u0430\u0442\u044C\u0435\u0439 87 \u041A\u043E\u043D\u0441\u0442\u0438\u0442\u0443\u0446\u0438\u0438
+      \u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u0439 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u0438
+      \u0432\u0435\u0440\u0445\u043E\u0432\u043D\u044B\u043C \u0433\u043B\u0430\u0432\u043D\u043E\u043A\u043E\u043C\u0430\u043D\u0434\u0443\u044E\u0449\u0438\u043C
+      \u0412\u043E\u043E\u0440\u0443\u0436\u0435\u043D\u043D\u044B\u043C\u0438 \u0441\u0438\u043B\u0430\u043C\u0438
+      \u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u0439 \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u0438
+      \u042F\u0432\u043B\u044F\u0435\u0442\u0441\u044F?"
+    Answers:
+    - "\u041F\u0440\u0435\u0437\u0438\u0434\u0435\u043D\u0442 \u0420\u0424"
+    - "\u041C\u0438\u043D\u0438\u0441\u0442\u0440 \u043E\u0431\u043E\u0440\u043E\u043D\u044B
+      \u0420\u0424"
+    - "\u0413\u043E\u0441\u0443\u0434\u0430\u0440\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F
+      \u0434\u0443\u043C\u0430 \u0420\u0424"
+    - "\u0412\u0440\u0435\u043C\u0435\u043D\u043D\u043E\u0435 \u043F\u0440\u0430\u0432\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u043E
+      \u0420\u0424"
+    CorrectAnswer: 1
+    img: {fileID: 21300000, guid: 496db01c64e3d7a4ca67d0af5020cea9, type: 3}
+  - Question: "\u0412 \u0420\u043E\u0441\u0441\u0438\u0438 \u043D\u0438\u0436\u043D\u0438\u0435
+      \u043F\u043E\u043B\u0438\u0446\u0435\u0439\u0441\u043A\u0438\u0435 \u0447\u0438\u043D\u044B
+      \u0434\u0435\u043B\u0438\u043B\u0438\u0441\u044C \u043D\u0430 \u0442\u0440\u0438
+      \u0433\u0440\u0443\u043F\u043F\u044B \u043F\u043E \u043C\u0430\u0441\u0448\u0442\u0430\u0431\u0443
+      \u0438\u0445 \u0434\u0435\u044F\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u0438.
+      \u041F\u0435\u0440\u0432\u044B\u0435 \u0434\u0432\u0435 \u0433\u0440\u0443\u043F\u043F\u044B
+      \u0431\u044B\u043B\u0438 \u0433\u043E\u0440\u043E\u0434\u043E\u0432\u044B\u0435
+      \u0438 \u043E\u043A\u043E\u043B\u043E\u0442\u043E\u0447\u043D\u044B\u0435,
+      \u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u043E\u0442\u043C\u0435\u043D\u0438\u043B\u0438
+      \u043F\u043E\u0441\u043B\u0435 \u0444\u0435\u0432\u0440\u0430\u043B\u044F 1917
+      \u0433. \u0410 \u043A\u0430\u043A\u0438\u043C \u0431\u044B\u043B \u0442\u0440\u0435\u0442\u0438\u0439,
+      \u0441\u0430\u043C\u044B\u0439 \u043C\u043B\u0430\u0434\u0448\u0438\u0439 \u043F\u043E\u043B\u0438\u0446\u0435\u0439\u0441\u043A\u0438\u0439
+      \u0447\u0438\u043D?"
+    Answers:
+    - "\u0421\u043B\u0443\u0436\u0438\u0432\u044B\u0435"
+    - "\u041D\u0430\u0434\u0441\u043C\u043E\u0442\u043E\u0440\u0449\u0438\u043A\u0438"
+    - "\u041D\u0430\u0431\u043B\u044E\u0434\u0430\u0442\u0435\u043B\u0438"
+    - "\u0414\u0432\u043E\u0440\u043D\u0438\u043A\u0438"
+    CorrectAnswer: 4
+    img: {fileID: 21300000, guid: 996ac72a966fd3143afff98bce95f781, type: 3}
+  - Question: "\u0410\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0446\u044B \u043D\u0430\u0437\u044B\u0432\u0430\u044E\u0442
+      \u0440\u0443\u0441\u0441\u043A\u0438\u0445, \u043A\u0430\u043A \u043F\u0440\u0430\u0432\u0438\u043B\u043E,
+      \u0418\u0432\u0430\u043D\u0430\u043C\u0438. \u041C\u044B \u043D\u0430\u0437\u044B\u0432\u0430\u0435\u043C
+      \u043D\u0435\u043C\u0446\u0435\u0432 \u0424\u0440\u0438\u0446\u0430\u043C\u0438
+      \u0438 \u0413\u0430\u043D\u0441\u0430\u043C\u0438, \u0444\u0440\u0430\u043D\u0446\u0443\u0437\u044B
+      \u043D\u0430\u0437\u044B\u0432\u0430\u044E\u0442 \u0438\u0445 \u041C\u0438\u0445\u0435\u043B\u044F\u043C\u0438.
+      \u0410 \u043A\u0430\u043A \u0434\u0440\u0435\u0432\u043D\u0438\u0435 \u0441\u043B\u0430\u0432\u044F\u043D\u0435
+      \u043D\u0430\u0437\u044B\u0432\u0430\u043B\u0438 \u0432\u0430\u0440\u044F\u0433\u043E\u0432,
+      \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043D\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u043B\u0438
+      \u043D\u0438 \u0441\u043B\u043E\u0432\u0430 \u043F\u043E-\u0440\u0443\u0441\u0441\u043A\u0438?"
+    Answers:
+    - "\u0420\u0430\u0437\u0433\u0435\u043B\u044C\u0434\u044F\u0438"
+    - "\u041E\u043B\u0443\u0445\u0438"
+    - "\u0414\u0443\u0440\u0430\u043A\u0438"
+    - "\u0417\u0430\u043C\u043E\u0440\u0441\u043A\u0438\u0435"
+    CorrectAnswer: 2
+    img: {fileID: 21300000, guid: 28e314ae12faec04f8a781b5ea02baea, type: 3}
+  - Question: "\u0421\u0430\u043C\u044B\u0439 \u043F\u0435\u0440\u0432\u044B\u0439
+      \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442 \u043E \u0412.\u0418. \u041B\u0435\u043D\u0438\u043D\u0435
+      (\u0423\u043B\u044C\u044F\u043D\u043E\u0432\u0435) \u0431\u044B\u043B \u043F\u043E\u0434\u043F\u0438\u0441\u0430\u043D
+      \u0441\u0432\u044F\u0449\u0435\u043D\u043D\u0438\u043A\u043E\u043C \u0412\u0430\u0441\u0438\u043B\u0438\u0435\u043C
+      \u0423\u043C\u043E\u0432\u044B\u043C \u0438 \u0434\u044C\u044F\u043A\u043E\u043D\u043E\u043C
+      \u0412\u043B. \u0417\u043D\u0430\u043C\u0435\u043D\u0441\u043A\u0438\u043C.
+      \u041E \u0447\u0435\u043C \u044D\u0442\u043E\u0442 \u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442?"
+    Answers:
+    - "\u041E \u0435\u0433\u043E \u0441\u043C\u0435\u0440\u0442\u0438"
+    - "\u041E \u0435\u0433\u043E \u043A\u0440\u0435\u0449\u0435\u043D\u0438\u0438 "
+    - "\u041E \u0435\u0433\u043E \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u043D\u043E\u043B\u0435\u0442\u0438\u0438"
+    - "\u041E \u0435\u0433\u043E \u0440\u043E\u0436\u0434\u0435\u043D\u0438\u0438"
+    CorrectAnswer: 4
+    img: {fileID: 21300000, guid: cff77b6f548ed63428d925ab12f6415f, type: 3}
+  - Question: "\u041F\u043E\u0447\u0435\u043C\u0443 \u042E\u0440\u0438\u0439 \u0414\u043E\u043B\u0433\u043E\u0440\u0443\u043A\u0438\u0439
+      \u043F\u043E\u043B\u0443\u0447\u0438\u043B \u043F\u0440\u043E\u0437\u0432\u0438\u0449\u0435
+      \xAB\u0414\u043E\u043B\u0433\u043E\u0440\u0443\u043A\u0438\u0439\xBB? "
+    Answers:
+    - "\u0417\u0430 \u0442\u043E, \u0447\u0442\u043E \u0443 \u043D\u0435\u0433\u043E
+      \u0431\u044B\u043B\u0438 \u0434\u043B\u0438\u043D\u043D\u044B\u0435 \u0440\u0443\u043A\u0438."
+    - "\u0417\u0430 \u0442\u043E, \u0447\u0442\u043E \u043E\u043D \u0431\u044B\u043B
+      \u0432\u044B\u0441\u043A\u043E\u0438\u043C."
+    - "\u0417\u0430 \u0435\u0433\u043E \u0441\u0442\u0440\u0435\u043C\u043B\u0435\u043D\u0438\u0435
+      \u0440\u0430\u0441\u0448\u0438\u0440\u0438\u0442\u044C \u0442\u0435\u0440\u0440\u0438\u0442\u043E\u0440\u0438\u0438."
+    - "\u0417\u0430 \u0442\u043E, \u0447\u0442\u043E \u0443 \u043D\u0435\u0433\u043E
+      \u0432\u043E \u0434\u0432\u043E\u0440\u0435 \u0431\u044B\u043B\u043E \u043C\u043D\u043E\u0433\u043E
+      \u043B\u044E\u0434\u0435\u0439 \u0441 \u0434\u043B\u0438\u043D\u043D\u044B\u043C\u0438
+      \u0440\u0443\u043A\u0430\u043C\u0438."
+    CorrectAnswer: 3
+    img: {fileID: 21300000, guid: cd36f1f081ba3db4c9a115089aef1e70, type: 3}
   options:
   - {fileID: 188477702}
   - {fileID: 328917713}
@@ -1714,11 +1957,12 @@ MonoBehaviour:
   ResultScreen: {fileID: 439818254}
   qText: {fileID: 910121759}
   rText: {fileID: 30918369}
+  ansText: {fileID: 1844174777}
   img: {fileID: 1496073391}
   answerSystem: {fileID: 0}
   currentQuestion: 0
   score: 0
-  roundAmount: 5
+  roundAmount: 7
 --- !u!4 &1228221004
 Transform:
   m_ObjectHideFlags: 0
@@ -1871,8 +2115,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041C\u0435\u0441\u0442\u043E \u0434\u043B\u044F \u043E\u0442\u0432\u0435\u0442\u0430"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 074d5568bbeb1c8439d7b2d17c43c210, type: 2}
+  m_sharedMaterial: {fileID: -6253689739207257060, guid: 074d5568bbeb1c8439d7b2d17c43c210,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1896,10 +2141,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 42.65
   m_fontSizeBase: 30
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -2004,8 +2249,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041C\u0435\u0441\u0442\u043E \u0434\u043B\u044F \u043E\u0442\u0432\u0435\u0442\u0430"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 074d5568bbeb1c8439d7b2d17c43c210, type: 2}
+  m_sharedMaterial: {fileID: -6253689739207257060, guid: 074d5568bbeb1c8439d7b2d17c43c210,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2029,10 +2275,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 42.65
   m_fontSizeBase: 30
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -2246,7 +2492,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 592, y: -24}
+  m_AnchoredPosition: {x: 631, y: -24}
   m_SizeDelta: {x: 319.52094, y: 95.708954}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1415642507
@@ -2388,8 +2634,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 215, y: -0.2}
-  m_SizeDelta: {x: 293.15222, y: 372.45862}
+  m_AnchoredPosition: {x: 219.4, y: -80}
+  m_SizeDelta: {x: 403.11102, y: 540.99115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1496073391
 MonoBehaviour:
@@ -2563,8 +2809,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 107, y: -106.5}
-  m_SizeDelta: {x: 688.5691, y: 177.49954}
+  m_AnchoredPosition: {x: 205.68, y: -131.9}
+  m_SizeDelta: {x: 748.8751, y: 228.3461}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663382508
 MonoBehaviour:
@@ -2579,7 +2825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2602,6 +2848,141 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663382506}
+  m_CullTransparentMesh: 0
+--- !u!1 &1844174775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1844174776}
+  - component: {fileID: 1844174778}
+  - component: {fileID: 1844174777}
+  m_Layer: 5
+  m_Name: rAtext
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1844174776
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844174775}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 896302121}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1844174777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844174775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u041C\u0435\u0441\u0442\u043E \u0434\u043B\u044F \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0445
+    \u043E\u0442\u0432\u0435\u0442\u043E\u0432"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 074d5568bbeb1c8439d7b2d17c43c210, type: 2}
+  m_sharedMaterial: {fileID: -6253689739207257060, guid: 074d5568bbeb1c8439d7b2d17c43c210,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1844174778
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844174775}
   m_CullTransparentMesh: 0
 --- !u!1 &1924167707
 GameObject:
@@ -2795,8 +3176,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041C\u0435\u0441\u0442\u043E \u0434\u043B\u044F \u043E\u0442\u0432\u0435\u0442\u0430"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 074d5568bbeb1c8439d7b2d17c43c210, type: 2}
+  m_sharedMaterial: {fileID: -6253689739207257060, guid: 074d5568bbeb1c8439d7b2d17c43c210,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2820,10 +3202,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 43.45
   m_fontSizeBase: 30
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -2903,10 +3285,10 @@ RectTransform:
   m_Father: {fileID: 439818255}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 422.03333, y: 194.89598}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -263}
+  m_SizeDelta: {x: 422.03333, y: 194.896}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2081992542
 MonoBehaviour:
