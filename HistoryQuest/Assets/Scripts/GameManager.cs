@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     public List<QnA> QnA;
 
     List<string> rightAnswers = new List<string>();
-    List<string> rQuestions = new List<string>();
 
     public GameObject[] options;
     public GameObject MainGame;
@@ -92,7 +91,6 @@ public class GameManager : MonoBehaviour
     {
         currentQuestion = Random.Range(0, QnA.Count);//Генерируем число от 0 до числа вопросов
         qText.text = QnA[currentQuestion].Question;//В поле вопроса вставляем текст нашего вопроса.
-        rQuestions.Add(QnA[currentQuestion].Question.ToString()); //Добавляем вопрос в список
         img.sprite = QnA[currentQuestion].img;//В поле со спрайтом вставляем спрайт нашего вопроса
         SetAnswer();
     }
