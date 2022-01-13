@@ -33,38 +33,35 @@ public class GameManager : MonoBehaviour
     {
         MainGame.SetActive(true); 
         ResultScreen.SetActive(false);
-        //В двух строках выше, мы при запуске скрипта включаем GameObject MainGame, а ResultScreen выключаем по ненадобности
+        //В двух строках выше, при загрузке сцены включаем GameObject MainGame, а ResultScreen выключаем по ненадобности
         QuestionGenerator();
     }
 
     public void GameCycle()
     {
-        //Debug.Log(roundCounter + " " + roundAmount + " " + score);
-
-        if (roundCounter == roundAmount)
-        {
-            MainGame.SetActive(false);
-            ResultScreen.SetActive(true);
-            //Проверяем, если счетчик раундов равен числу раундов в игре, то мы выключаем MainGame и включаем ResultScreen, где мы будем выводить результаты
-
-            rText.text = "Вы ответили правильно на " + score + " из " + roundAmount + " вопросов";
-
-            rightAns += "Список правильных ответов:\n";
-
-            for(int i = 0; i < rightAnswers.Count; i++)
-            {
-                rightAns += (i + 1) + "Вопрос" + " - " + rightAnswers[i] + "\n"; //Формируем строку, в которой записаны: номер вопроса и правильный ответ
-            }
-
-            ansText.text = rightAns; //Выводим список правильных ответов пользователю
-        }
-        else
+        if (roundCounter != roundAmount)
         {
             roundCounter++;
             QnA.RemoveAt(currentQuestion);
             QuestionGenerator();
-            //Если первое условие не выполнилось, то мы добавляем к счетчику раундов 1, убираем уже отвеченный вопрос и генерируем новый из списка
+            return;
+            //Если счетчик раундов не равен общему количеству раундов, то инкрементируем счетчик и возвращаем void
         }
+
+        MainGame.SetActive(false);
+        ResultScreen.SetActive(true);
+
+        rText.text = "Вы ответили правильно на " + score + " из " + roundAmount + " вопросов";
+        //Выводим, на сколько вопросов правильно ответил пользователь
+
+        rightAns += "Список правильных ответов:\n";
+
+        for(int i = 0; i < rightAnswers.Count; i++)
+        {
+            rightAns += (i + 1) + "Вопрос" + " - " + rightAnswers[i] + "\n"; //Формируем строку, в которой записаны: номер вопроса и правильный ответ
+        } 
+
+        ansText.text = rightAns; //Выводим список правильных ответов пользователю
     }
 
     void SetAnswer()
