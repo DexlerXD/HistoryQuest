@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
             options[i].transform.GetChild(0).GetComponent<TMP_Text>().text = QnA[currentQuestion].Answers[i];
             //Этот же выбранный вопрос мы вставляем в поле с выбором ответа при помощи GetComponent<> и выбором техта из нашего списка
 
-            if (QnA[currentQuestion].CorrectAnswer == i + 1)
+            if (QnA[currentQuestion].CorrectAnswerIndex == i + 1)
             {
                 options[i].GetComponent<AnswerSystem>().isCorrect = true;
                 rightAnswers.Add(QnA[currentQuestion].Answers[i].ToString()); //Добавляем правильный ответ в список 
